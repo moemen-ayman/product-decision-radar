@@ -1,93 +1,91 @@
-# مؤشر قرارات المنتجات
+# Product Decision Radar
 
-نموذج أولي يراجع إشارات المبيعات والمخزون والمرتجعات والجودة، ويعرض سياق التسويق والإنتاج لكل منتج مع أسباب الإجراء المقترح والبيانات التي تدعمه. أغلب السجلات التشغيلية تدريبية/نمذجية؛ النتائج ليست أرقام أداء مدققة ولا توصيات تشغيلية معتمدة.
+An explainable product-review prototype for sales, inventory, returns, and quality signals, with marketing and production context. It shows the evidence behind each suggested action. The supplied operational records are modeled/anonymized training data; results are not audited company performance or approved operational recommendations.
 
-## هيكل المشروع
+## Project structure
 
 ```text
 project/
   data/
-    raw/                         # ملفات المصدر الأصلية كما وردت
-      reference/                 # مراجع PDF الأصلية
-    processed/                   # جداول ونتائج مولّدة وقابلة لإعادة الإنشاء
+    raw/                         # Original source files, preserved as received
+      reference/                 # Source PDF references
+    processed/                   # Rebuildable analytical tables and outputs
   docs/
-    reference/                   # خطة المشروع PDF
-    PROJECT_CHECKLIST.md         # قائمة المتطلبات وحالة الإنجاز
-    PROJECT_CLOSEOUT.md          # ملخص المنجز والمتبقي وشروط الإغلاق التشغيلي
-    STAKEHOLDER_REVIEW.md        # نتائج الفحص والأسئلة التي تحتاج قرارًا
-    DATA_AUDIT.md                # نتائج تدقيق البيانات
-    LIVE_DATA_READINESS.md       # متطلبات استبدال البيانات النموذجية بمصدر تشغيلي
-    METRIC_RULES.md              # تعريفات المقاييس المؤقتة
-    MARKETING_PRODUCTION_RULES.md # تعريفات التسويق والإنتاج وقيود الإسناد
-    EXAMPLE_REVIEW.md            # مراجعة أمثلة نموذجية وتعارض الإشارات
-    DECISION_RULES.md            # قواعد التوصيات وترتيب الأولوية
+    reference/                   # Project plan PDF
+    PROJECT_CHECKLIST.md         # Requirements and completion status
+    PROJECT_CLOSEOUT.md          # Completed work and remaining operational steps
+    STAKEHOLDER_REVIEW.md        # Findings and decisions requiring business review
+    DATA_AUDIT.md                # Data audit results
+    LIVE_DATA_READINESS.md       # Requirements for approved operational data
+    METRIC_RULES.md              # Provisional metric definitions
+    MARKETING_PRODUCTION_RULES.md # Marketing/production definitions and attribution limits
+    EXAMPLE_REVIEW.md            # Example cases and conflicting signals
+    DECISION_RULES.md            # Recommendation and priority rules
     PRODUCT_DECISION_RADAR_PLAN.md
   src/product_radar/
-    app.py                      # لوحة إنجليزية للأولويات وتفاصيل المنتج والتسويق والإنتاج
-    data/build_features.py       # إنشاء جداول المنتج-الشهر والمخزون-الموقع-الشهر
-    data/build_marketing_production.py # إنشاء الجداول الاتجاهية للتسويق والإنتاج والطباعة والتوقف
-    decisions/rules.py           # تطبيق قواعد التوصية وتوليد قائمة الإجراءات
+    app.py                       # English dashboard for priorities, product details, marketing, and production
+    data/build_features.py       # Builds product-month and product-location-month tables
+    data/build_marketing_production.py # Builds marketing, production, printing, and downtime tables
+    decisions/rules.py           # Applies decision rules and creates the action list
   tests/
-    test_data_integrity.py       # فحوصات المقاييس ومفاتيح الربط ومخرجات القواعد
-  requirements.txt               # تبعيات لوحة المعلومات
-  .streamlit/config.toml         # ألوان الواجهة
-  output/pdf/                    # نسخة الخطة في مسارها القديم؛ المرجع الأساسي في docs/reference/
-  output/presentations/          # مسودات العروض التقديمية القابلة للتحرير
-  outputs/<task-id>/             # ملفات Excel النهائية؛ الفهرس في outputs/README.md
-  tmp/                           # ملفات بناء ومعاينات مؤقتة وليست مخرجات التسليم
-  tmp/pdf_previews/              # صور معاينة PDF محفوظة
+    test_data_integrity.py       # Metric, join-key, and decision-output checks
+  requirements.txt               # Dashboard dependencies
+  .streamlit/config.toml         # Dashboard theme
+  output/pdf/                    # Project plan copy and Arabic executive summary
+  output/presentations/          # Editable presentation drafts
+  outputs/<task-id>/             # Final Excel workbooks; see outputs/README.md
+  tmp/                           # Temporary build files and previews; not deliverables
 ```
 
-## تشغيل المعالجة
+## Set up and run the dashboard
 
-يتطلب Python 3.10 أو أحدث. معالجة البيانات تستخدم مكتبة Python القياسية؛ لوحة المعلومات تحتاج Streamlit وpandas وPlotly.
-
-من مجلد المشروع، شغّل الأوامر بالترتيب:
+From the project root in PowerShell, create the virtual environment, install dependencies, and build the data tables:
 
 ```powershell
-python .\src\product_radar\data\build_features.py
-python .\src\product_radar\data\build_marketing_production.py
-python .\src\product_radar\decisions\rules.py
-python -m pip install -r requirements.txt
-python -m streamlit run .\src\product_radar\app.py
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe .\src\product_radar\data\build_features.py
+.\.venv\Scripts\python.exe .\src\product_radar\data\build_marketing_production.py
+.\.venv\Scripts\python.exe .\src\product_radar\decisions\rules.py
+.\.venv\Scripts\python.exe -m streamlit run .\src\product_radar\app.py
 ```
 
-ينتج الأمر الأول:
+The dashboard opens at `http://localhost:8501/`. Keep the terminal open while using it.
 
-- `data/processed/product_month.csv`: صف لكل منتج وشهر، مع المبيعات والربح التقديري والمرتجعات والجودة.
-- `data/processed/product_location_month.csv`: صف لكل منتج وموقع وشهر، مع رصيد المخزون والتغطية وأعلام اتزان الحركة.
+The first build creates:
 
-ينتج الأمر الثاني خمسة جداول للوحة التسويق والإنتاج: الحملات حسب شهر بداية الحملة والمنتج والمنصة، أوامر الإنتاج حسب شهر الإنجاز، الاختناقات المبلغ عنها، الطباعة حسب المنتج والشهر، وتوقف المصنع حسب المنطقة والشهر. مقاييس الحملات اتجاهية، وتوقف المصنع لا يمكن إسناده إلى منتج لغياب مفتاح المنتج. تفاصيل التعريفات في `docs/MARKETING_PRODUCTION_RULES.md`.
+- `data/processed/product_month.csv`: one row per product and month, with sales, estimated profit, returns, and quality.
+- `data/processed/product_location_month.csv`: one row per product, location, and month, with inventory balances, cover, and movement-balance flags.
 
-وينتج الأمر الثالث:
+The second build creates five marketing and operations tables: campaigns by start month/product/platform, production orders by completion month, reported bottlenecks, printing by product/month, and factory downtime by area/month. Campaign metrics are directional; downtime cannot be attributed to a product because the source has no product key.
 
-- `data/processed/product_actions.csv`: صف لكل منتج، يتضمن الإجراء الرئيسي، كل الإشارات المتزامنة، شرح الأدلة، وفترات القياس والعتبات.
+The third build creates `data/processed/product_actions.csv`, with one row per product, the lead action, concurrent signals, supporting evidence, measurement periods, and thresholds.
 
-الأمر الخامس يفتح لوحة إنجليزية تشمل قائمة الإجراءات ومرشحات العلامة والفئة والأولوية وفترة سياق المبيعات، وصفحة تفاصيل المنتج، وصفحة التسويق والإنتاج، وصفحتي مراجعة العتبات والحالات مع أصحاب القرار. مرشح الفترة يحدّث مؤشرات المبيعات والهوامش وأعمدة كل منتج في الشاشة؛ وتظل الإجراءات على فتراتها الثابتة في القواعد (3 أشهر للمبيعات والمرتجعات و6 أشهر للجودة)، ويظل المخزون لقطة الشهر الأحدث.
+The English dashboard includes a ranked action list, filters for brand/category/priority/search and sales context, product details, marketing and production views, plus threshold and case-review pages. The sales-period selector updates sales and margin context only. Decision rules keep their fixed windows (three months for sales/returns and six months for quality), while inventory remains the latest available monthly snapshot.
 
-تُعرض مؤشرات التسويق حسب شهر بداية الحملة مع نتائج قد تمتد لفترة لاحقة؛ لا يوجد مفتاح حملة في سجل المبيعات، لذلك لا تثبت أثرًا سببيًا. تُعرض أوامر الإنتاج حسب شهر الإنجاز، وتوقف الماكينات حسب المنطقة فقط لغياب مفتاح المنتج. صافي المبيعات المصدرية والمبالغ المستردة يظهران كمقياسين منفصلين، كما يقتصر نطاق مخزون المنتج التام على LOC001-LOC003.
+Marketing is grouped by campaign start month, although results may extend into later months. Sales transactions do not have a campaign key, so attributed revenue and ROAS do not prove causal impact. Production orders are grouped by completion month. Factory downtime is shown by area because it has no product key. Source net sales and reported refunds remain separate. Finished-goods inventory scope is limited to LOC001–LOC003.
 
-القواعد والعتبات أولية وقابلة للتعديل في `src/product_radar/decisions/rules.py`. راجع `docs/DECISION_RULES.md` قبل عرض المخرجات كقرارات تجارية. بيانات المخزون الشهرية تاريخية، ولا تمثل المخزون الحي.
+Rules and thresholds are provisional and configurable in `src/product_radar/decisions/rules.py`. Review `docs/DECISION_RULES.md` before using results as business decisions. Inventory data is a historical monthly snapshot, not live on-hand stock.
 
-## فحوصات سلامة النتائج
+## Validate the current outputs
 
-شغّل الفحوصات من مجلد المشروع بعد تحديث الجداول المعالجة:
+After rebuilding the processed tables, run the checks from the project root:
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-تتحقق الفحوصات من تطابق المبيعات والجودة مع المصدر، وفرادة مفاتيح المنتج/الشهر والموقع، واتزان المخزون، واكتمال المنتجات وصحة إشارات القواعد. تقرأ الملفات الحالية فقط ولا تعيد إنشاءها أو تعدّلها.
+The checks compare sales and quality totals with source data, verify product/month/location keys and inventory balances, and validate product coverage and decision signals. They read the current files; they do not rebuild or modify them.
 
-## سلامة ملفات المصدر
+## Source-file integrity
 
-ملفات CSV نُقلت إلى `data/raw/` دون تعديل محتواها. ملف المهمة الأصلي في `data/raw/reference/` وخطة المشروع في `docs/reference/`. يحتوي `data/SHA256SUMS.txt` على بصمات SHA-256 لملفات المصدر والمراجع للتحقق من سلامتها بعد النقل أو النسخ.
+The CSV files in `data/raw/` are preserved as received. The original assignment reference is in `data/raw/reference/`; the project plan is in `docs/reference/`. `data/SHA256SUMS.txt` contains SHA-256 checksums for source and reference files, so their integrity can be verified after copying or moving them.
 
-يوجد ملف خطة إضافي في مسار `output/pdf/` القديم؛ تعذر نقله لأن الملف مفتوح من عملية أخرى، لذلك أبقيته كما هو ولم أحذفه. النسخة الأساسية للقراءة والعمل في `docs/reference/`، وتطابقه بالبصمة.
+The project plan also remains in `output/pdf/` as a legacy copy. It matches the reference copy in `docs/reference/` by checksum.
 
-## المخرجات النهائية
+## Final deliverables
 
-- الملخص الإداري العربي PDF: `output/pdf/Product_Decision_Radar_Executive_Summary_AR_2026-10-11.pdf`.
-- تحليل Excel التفصيلي: داخل `outputs/<task-id>/`؛ راجع `outputs/README.md` للوصول إلى المجلد والملف النهائي.
-- مسودة العرض التقديمي: `output/presentations/`؛ لا تزال بانتظار اعتماد أصحاب القرار.
-- ملفات البناء والمعاينات الوسيطة: `tmp/`، ولا تُعد نسخًا نهائية للتسليم.
+- Arabic executive summary: `output/pdf/Product_Decision_Radar_Executive_Summary_AR_2026-10-11.pdf`.
+- Detailed Excel analysis: under `outputs/<task-id>/`; see `outputs/README.md` for the exact path.
+- Presentation draft: `output/presentations/`; pending business-owner review and approval.
+- Temporary build files and previews: under `tmp/`; these are not final deliverables.
