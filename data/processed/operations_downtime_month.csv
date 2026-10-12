@@ -1,0 +1,181 @@
+﻿Downtime_Month,Business_Area,Downtime_Event_Count,Planned_Event_Count,Unplanned_Event_Count,Downtime_Hours,Planned_Downtime_Hours,Unplanned_Downtime_Hours,Leading_Reason_By_Hours,Leading_Reason_Hours,Product_Attribution
+2023-10,Cutting,14,4,10,24.6,8.6,16.0,Planned maintenance,8.6,unavailable; source downtime has no Product_ID
+2023-10,Finishing,5,0,5,8.5,0.0,8.5,Mechanical fault,4.0,unavailable; source downtime has no Product_ID
+2023-10,Packing,6,1,5,15.0,4.2,10.8,Mechanical fault,5.2,unavailable; source downtime has no Product_ID
+2023-10,Printing,47,10,37,100.8,11.8,89.0,Setup / changeover,29.2,unavailable; source downtime has no Product_ID
+2023-10,Sewing,19,6,13,45.8,12.8,33.0,Mechanical fault,16.7,unavailable; source downtime has no Product_ID
+2023-11,Cutting,9,2,7,18.1,2.2,15.9,Electrical fault,6.3,unavailable; source downtime has no Product_ID
+2023-11,Finishing,4,2,2,6.8,1.6,5.2,Operator shortage,3.8,unavailable; source downtime has no Product_ID
+2023-11,Packing,8,1,7,10.4,2.5,7.9,Setup / changeover,4.1,unavailable; source downtime has no Product_ID
+2023-11,Printing,32,11,21,81.5,25.2,56.3,Operator shortage,28.8,unavailable; source downtime has no Product_ID
+2023-11,Sewing,16,4,12,40.7,5.6,35.1,Setup / changeover,13.5,unavailable; source downtime has no Product_ID
+2023-12,Cutting,13,1,12,34.3,0.8,33.5,Mechanical fault,18.9,unavailable; source downtime has no Product_ID
+2023-12,Finishing,4,0,4,5.8,0.0,5.8,Material wait,3.4,unavailable; source downtime has no Product_ID
+2023-12,Packing,9,3,6,14.6,7.0,7.6,Planned maintenance,7.0,unavailable; source downtime has no Product_ID
+2023-12,Printing,26,7,19,63.4,16.0,47.4,Operator shortage,16.0,unavailable; source downtime has no Product_ID
+2023-12,Sewing,22,6,16,57.2,17.1,40.1,Mechanical fault,19.1,unavailable; source downtime has no Product_ID
+2024-01,Cutting,22,6,16,61.5,13.9,47.6,Mechanical fault,18.1,unavailable; source downtime has no Product_ID
+2024-01,Finishing,5,1,4,22.8,1.5,21.3,Mechanical fault,19.2,unavailable; source downtime has no Product_ID
+2024-01,Packing,6,0,6,5.0,0.0,5.0,Mechanical fault,3.9,unavailable; source downtime has no Product_ID
+2024-01,Printing,29,5,24,58.6,16.6,42.0,Setup / changeover,18.8,unavailable; source downtime has no Product_ID
+2024-01,Sewing,19,4,15,50.3,3.6,46.7,Mechanical fault,15.6,unavailable; source downtime has no Product_ID
+2024-02,Cutting,6,0,6,24.5,0.0,24.5,Setup / changeover,19.9,unavailable; source downtime has no Product_ID
+2024-02,Finishing,6,0,6,5.3,0.0,5.3,Mechanical fault,4.3,unavailable; source downtime has no Product_ID
+2024-02,Packing,6,0,6,6.0,0.0,6.0,Electrical fault,3.3,unavailable; source downtime has no Product_ID
+2024-02,Printing,37,7,30,78.4,13.5,64.9,Mechanical fault,28.9,unavailable; source downtime has no Product_ID
+2024-02,Sewing,18,3,15,38.7,4.2,34.5,Electrical fault,12.1,unavailable; source downtime has no Product_ID
+2024-03,Cutting,16,4,12,26.5,6.2,20.3,Mechanical fault,8.2,unavailable; source downtime has no Product_ID
+2024-03,Finishing,4,1,3,6.9,1.2,5.7,Mechanical fault,3.3,unavailable; source downtime has no Product_ID
+2024-03,Packing,6,1,5,8.8,0.2,8.6,Material wait,4.7,unavailable; source downtime has no Product_ID
+2024-03,Printing,33,8,25,82.0,13.1,68.9,Mechanical fault,32.3,unavailable; source downtime has no Product_ID
+2024-03,Sewing,16,1,15,37.6,4.1,33.5,Mechanical fault,19.2,unavailable; source downtime has no Product_ID
+2024-04,Cutting,13,2,11,43.5,10.2,33.3,Setup / changeover,13.9,unavailable; source downtime has no Product_ID
+2024-04,Finishing,3,0,3,4.8,0.0,4.8,Mechanical fault,2.1,unavailable; source downtime has no Product_ID
+2024-04,Packing,7,4,3,9.4,3.8,5.6,Electrical fault,3.9,unavailable; source downtime has no Product_ID
+2024-04,Printing,47,11,36,120.2,19.5,100.7,Setup / changeover,30.3,unavailable; source downtime has no Product_ID
+2024-04,Sewing,20,4,16,54.7,10.3,44.4,Electrical fault,15.5,unavailable; source downtime has no Product_ID
+2024-05,Cutting,10,2,8,19.4,1.4,18.0,Mechanical fault,7.8,unavailable; source downtime has no Product_ID
+2024-05,Finishing,9,2,7,13.8,1.1,12.7,Mechanical fault,8.6,unavailable; source downtime has no Product_ID
+2024-05,Packing,8,2,6,17.7,3.2,14.5,Setup / changeover,6.3,unavailable; source downtime has no Product_ID
+2024-05,Printing,37,11,26,58.2,13.1,45.1,Mechanical fault,15.1,unavailable; source downtime has no Product_ID
+2024-05,Sewing,21,4,17,37.7,11.3,26.4,Planned maintenance,11.3,unavailable; source downtime has no Product_ID
+2024-06,Cutting,15,1,14,27.4,1.2,26.2,Setup / changeover,10.1,unavailable; source downtime has no Product_ID
+2024-06,Finishing,11,5,6,15.8,8.1,7.7,Planned maintenance,8.1,unavailable; source downtime has no Product_ID
+2024-06,Packing,3,1,2,1.9,0.5,1.4,Setup / changeover,0.8,unavailable; source downtime has no Product_ID
+2024-06,Printing,32,3,29,59.8,2.1,57.7,Setup / changeover,18.1,unavailable; source downtime has no Product_ID
+2024-06,Sewing,27,5,22,63.6,11.0,52.6,Mechanical fault,23.4,unavailable; source downtime has no Product_ID
+2024-07,Cutting,15,1,14,34.8,6.8,28.0,Setup / changeover,14.9,unavailable; source downtime has no Product_ID
+2024-07,Finishing,9,3,6,25.8,11.1,14.7,Planned maintenance,11.1,unavailable; source downtime has no Product_ID
+2024-07,Packing,6,4,2,7.3,4.2,3.1,Planned maintenance,4.2,unavailable; source downtime has no Product_ID
+2024-07,Printing,34,9,25,70.4,23.0,47.4,Planned maintenance,23.0,unavailable; source downtime has no Product_ID
+2024-07,Sewing,22,3,19,31.4,9.8,21.6,Planned maintenance,9.8,unavailable; source downtime has no Product_ID
+2024-08,Cutting,10,1,9,23.1,1.3,21.8,Mechanical fault,15.6,unavailable; source downtime has no Product_ID
+2024-08,Finishing,3,0,3,5.4,0.0,5.4,Electrical fault,5.4,unavailable; source downtime has no Product_ID
+2024-08,Packing,13,1,12,35.5,1.1,34.4,Setup / changeover,19.7,unavailable; source downtime has no Product_ID
+2024-08,Printing,41,7,34,107.5,18.9,88.6,Mechanical fault,39.0,unavailable; source downtime has no Product_ID
+2024-08,Sewing,16,4,12,32.9,7.0,25.9,Electrical fault,7.3,unavailable; source downtime has no Product_ID
+2024-09,Cutting,12,2,10,45.4,5.4,40.0,Electrical fault,27.0,unavailable; source downtime has no Product_ID
+2024-09,Finishing,6,1,5,13.5,2.3,11.2,Mechanical fault,5.6,unavailable; source downtime has no Product_ID
+2024-09,Packing,4,1,3,10.6,1.6,9.0,Material wait,7.0,unavailable; source downtime has no Product_ID
+2024-09,Printing,32,6,26,81.1,21.3,59.8,Planned maintenance,21.3,unavailable; source downtime has no Product_ID
+2024-09,Sewing,14,5,9,16.4,3.6,12.8,Mechanical fault,4.2,unavailable; source downtime has no Product_ID
+2024-10,Cutting,10,2,8,24.0,2.7,21.3,Material wait,17.2,unavailable; source downtime has no Product_ID
+2024-10,Finishing,8,2,6,13.4,2.7,10.7,Material wait,7.8,unavailable; source downtime has no Product_ID
+2024-10,Packing,10,4,6,21.2,6.9,14.3,Mechanical fault,9.5,unavailable; source downtime has no Product_ID
+2024-10,Printing,30,10,20,55.9,19.1,36.8,Planned maintenance,19.1,unavailable; source downtime has no Product_ID
+2024-10,Sewing,19,4,15,35.6,7.7,27.9,Material wait,11.9,unavailable; source downtime has no Product_ID
+2024-11,Cutting,10,3,7,20.4,2.0,18.4,Mechanical fault,14.3,unavailable; source downtime has no Product_ID
+2024-11,Finishing,15,5,10,37.9,9.0,28.9,Electrical fault,13.5,unavailable; source downtime has no Product_ID
+2024-11,Packing,4,2,2,15.0,4.4,10.6,Electrical fault,8.3,unavailable; source downtime has no Product_ID
+2024-11,Printing,21,4,17,46.8,10.8,36.0,Electrical fault,22.4,unavailable; source downtime has no Product_ID
+2024-11,Sewing,18,5,13,36.6,3.6,33.0,Mechanical fault,15.0,unavailable; source downtime has no Product_ID
+2024-12,Cutting,16,3,13,21.0,4.2,16.8,Setup / changeover,6.0,unavailable; source downtime has no Product_ID
+2024-12,Finishing,9,4,5,22.5,4.0,18.5,Setup / changeover,10.0,unavailable; source downtime has no Product_ID
+2024-12,Packing,8,1,7,21.0,2.8,18.2,Mechanical fault,9.4,unavailable; source downtime has no Product_ID
+2024-12,Printing,38,4,34,111.7,14.4,97.3,Mechanical fault,31.5,unavailable; source downtime has no Product_ID
+2024-12,Sewing,14,2,12,38.0,3.7,34.3,Setup / changeover,14.2,unavailable; source downtime has no Product_ID
+2025-01,Cutting,8,2,6,16.2,4.7,11.5,Electrical fault,5.1,unavailable; source downtime has no Product_ID
+2025-01,Finishing,5,0,5,8.4,0.0,8.4,Mechanical fault,4.7,unavailable; source downtime has no Product_ID
+2025-01,Packing,7,0,7,16.5,0.0,16.5,Mechanical fault,9.1,unavailable; source downtime has no Product_ID
+2025-01,Printing,28,8,20,81.3,22.4,58.9,Setup / changeover,26.3,unavailable; source downtime has no Product_ID
+2025-01,Sewing,24,6,18,54.2,13.4,40.8,Operator shortage,13.9,unavailable; source downtime has no Product_ID
+2025-02,Cutting,11,4,7,33.8,5.2,28.6,Setup / changeover,24.0,unavailable; source downtime has no Product_ID
+2025-02,Finishing,9,3,6,16.4,3.0,13.4,Operator shortage,5.1,unavailable; source downtime has no Product_ID
+2025-02,Packing,3,1,2,3.9,0.3,3.6,Mechanical fault,3.6,unavailable; source downtime has no Product_ID
+2025-02,Printing,29,3,26,59.8,3.3,56.5,Mechanical fault,18.8,unavailable; source downtime has no Product_ID
+2025-02,Sewing,19,5,14,31.5,10.2,21.3,Mechanical fault,10.8,unavailable; source downtime has no Product_ID
+2025-03,Cutting,18,5,13,40.8,6.7,34.1,Setup / changeover,13.9,unavailable; source downtime has no Product_ID
+2025-03,Finishing,6,4,2,13.9,7.4,6.5,Planned maintenance,7.4,unavailable; source downtime has no Product_ID
+2025-03,Packing,5,1,4,10.5,1.7,8.8,Material wait,7.4,unavailable; source downtime has no Product_ID
+2025-03,Printing,34,4,30,83.4,13.9,69.5,Setup / changeover,22.6,unavailable; source downtime has no Product_ID
+2025-03,Sewing,25,1,24,59.0,2.8,56.2,Mechanical fault,18.9,unavailable; source downtime has no Product_ID
+2025-04,Cutting,13,4,9,32.1,4.9,27.2,Mechanical fault,11.8,unavailable; source downtime has no Product_ID
+2025-04,Finishing,8,4,4,38.4,10.3,28.1,Mechanical fault,17.4,unavailable; source downtime has no Product_ID
+2025-04,Packing,10,2,8,24.0,10.4,13.6,Planned maintenance,10.4,unavailable; source downtime has no Product_ID
+2025-04,Printing,32,8,24,74.2,12.1,62.1,Setup / changeover,16.1,unavailable; source downtime has no Product_ID
+2025-04,Sewing,15,1,14,40.7,1.8,38.9,Mechanical fault,18.3,unavailable; source downtime has no Product_ID
+2025-05,Cutting,12,2,10,29.7,1.3,28.4,Material wait,11.2,unavailable; source downtime has no Product_ID
+2025-05,Finishing,5,3,2,3.4,2.2,1.2,Planned maintenance,2.2,unavailable; source downtime has no Product_ID
+2025-05,Packing,9,2,7,16.1,1.7,14.4,Operator shortage,6.0,unavailable; source downtime has no Product_ID
+2025-05,Printing,37,8,29,67.8,14.8,53.0,Planned maintenance,14.8,unavailable; source downtime has no Product_ID
+2025-05,Sewing,16,3,13,41.1,5.8,35.3,Setup / changeover,17.6,unavailable; source downtime has no Product_ID
+2025-06,Cutting,13,2,11,27.0,3.0,24.0,Setup / changeover,9.7,unavailable; source downtime has no Product_ID
+2025-06,Finishing,8,1,7,15.3,1.5,13.8,Material wait,8.4,unavailable; source downtime has no Product_ID
+2025-06,Packing,2,0,2,10.9,0.0,10.9,Setup / changeover,10.9,unavailable; source downtime has no Product_ID
+2025-06,Printing,39,10,29,93.6,23.6,70.0,Mechanical fault,29.3,unavailable; source downtime has no Product_ID
+2025-06,Sewing,15,2,13,32.0,5.2,26.8,Material wait,13.5,unavailable; source downtime has no Product_ID
+2025-07,Cutting,15,4,11,38.5,5.2,33.3,Setup / changeover,16.0,unavailable; source downtime has no Product_ID
+2025-07,Finishing,5,0,5,11.5,0.0,11.5,Electrical fault,6.0,unavailable; source downtime has no Product_ID
+2025-07,Packing,8,2,6,10.9,2.4,8.5,Material wait,3.4,unavailable; source downtime has no Product_ID
+2025-07,Printing,47,10,37,128.8,18.2,110.6,Mechanical fault,49.9,unavailable; source downtime has no Product_ID
+2025-07,Sewing,26,5,21,51.4,6.4,45.0,Mechanical fault,18.0,unavailable; source downtime has no Product_ID
+2025-08,Cutting,21,4,17,40.7,10.8,29.9,Setup / changeover,16.7,unavailable; source downtime has no Product_ID
+2025-08,Finishing,6,1,5,14.0,9.4,4.6,Planned maintenance,9.4,unavailable; source downtime has no Product_ID
+2025-08,Packing,2,0,2,6.7,0.0,6.7,Electrical fault,5.2,unavailable; source downtime has no Product_ID
+2025-08,Printing,41,9,32,98.5,19.3,79.2,Mechanical fault,36.9,unavailable; source downtime has no Product_ID
+2025-08,Sewing,20,6,14,37.6,11.5,26.1,Planned maintenance,11.5,unavailable; source downtime has no Product_ID
+2025-09,Cutting,11,2,9,25.6,11.7,13.9,Planned maintenance,11.7,unavailable; source downtime has no Product_ID
+2025-09,Finishing,7,2,5,17.8,6.1,11.7,Setup / changeover,9.4,unavailable; source downtime has no Product_ID
+2025-09,Packing,6,4,2,10.5,8.3,2.2,Planned maintenance,8.3,unavailable; source downtime has no Product_ID
+2025-09,Printing,35,9,26,91.2,12.5,78.7,Mechanical fault,57.7,unavailable; source downtime has no Product_ID
+2025-09,Sewing,8,1,7,16.3,2.1,14.2,Setup / changeover,9.2,unavailable; source downtime has no Product_ID
+2025-10,Cutting,10,1,9,16.4,1.2,15.2,Electrical fault,6.6,unavailable; source downtime has no Product_ID
+2025-10,Finishing,3,0,3,4.3,0.0,4.3,Setup / changeover,2.3,unavailable; source downtime has no Product_ID
+2025-10,Packing,12,2,10,22.3,2.5,19.8,Setup / changeover,8.0,unavailable; source downtime has no Product_ID
+2025-10,Printing,36,11,25,82.4,30.5,51.9,Planned maintenance,30.5,unavailable; source downtime has no Product_ID
+2025-10,Sewing,23,3,20,76.2,9.8,66.4,Electrical fault,27.0,unavailable; source downtime has no Product_ID
+2025-11,Cutting,5,1,4,10.3,1.3,9.0,Setup / changeover,3.8,unavailable; source downtime has no Product_ID
+2025-11,Finishing,7,3,4,8.5,4.1,4.4,Planned maintenance,4.1,unavailable; source downtime has no Product_ID
+2025-11,Packing,8,0,8,7.5,0.0,7.5,Electrical fault,5.8,unavailable; source downtime has no Product_ID
+2025-11,Printing,25,2,23,36.2,4.4,31.8,Mechanical fault,16.5,unavailable; source downtime has no Product_ID
+2025-11,Sewing,21,5,16,57.7,12.1,45.6,Mechanical fault,24.8,unavailable; source downtime has no Product_ID
+2025-12,Cutting,12,5,7,54.6,26.5,28.1,Planned maintenance,26.5,unavailable; source downtime has no Product_ID
+2025-12,Finishing,6,2,4,4.1,0.5,3.6,Operator shortage,2.5,unavailable; source downtime has no Product_ID
+2025-12,Packing,7,2,5,14.6,4.1,10.5,Material wait,7.0,unavailable; source downtime has no Product_ID
+2025-12,Printing,31,6,25,59.1,8.4,50.7,Mechanical fault,21.4,unavailable; source downtime has no Product_ID
+2025-12,Sewing,24,8,16,52.6,12.4,40.2,Mechanical fault,17.7,unavailable; source downtime has no Product_ID
+2026-01,Cutting,12,2,10,17.3,1.8,15.5,Material wait,5.9,unavailable; source downtime has no Product_ID
+2026-01,Finishing,7,3,4,11.4,5.4,6.0,Planned maintenance,5.4,unavailable; source downtime has no Product_ID
+2026-01,Packing,7,0,7,10.2,0.0,10.2,Setup / changeover,6.1,unavailable; source downtime has no Product_ID
+2026-01,Printing,30,6,24,90.9,27.9,63.0,Planned maintenance,27.9,unavailable; source downtime has no Product_ID
+2026-01,Sewing,22,5,17,48.9,17.0,31.9,Planned maintenance,17.0,unavailable; source downtime has no Product_ID
+2026-02,Cutting,8,2,6,20.6,0.5,20.1,Setup / changeover,7.1,unavailable; source downtime has no Product_ID
+2026-02,Finishing,7,0,7,22.4,0.0,22.4,Operator shortage,9.5,unavailable; source downtime has no Product_ID
+2026-02,Packing,6,1,5,15.6,3.3,12.3,Mechanical fault,7.8,unavailable; source downtime has no Product_ID
+2026-02,Printing,25,2,23,48.9,5.7,43.2,Mechanical fault,19.2,unavailable; source downtime has no Product_ID
+2026-02,Sewing,14,0,14,22.4,0.0,22.4,Setup / changeover,7.7,unavailable; source downtime has no Product_ID
+2026-03,Cutting,17,5,12,27.8,5.3,22.5,Setup / changeover,8.7,unavailable; source downtime has no Product_ID
+2026-03,Finishing,5,0,5,17.0,0.0,17.0,Operator shortage,14.7,unavailable; source downtime has no Product_ID
+2026-03,Packing,7,2,5,10.6,4.5,6.1,Planned maintenance,4.5,unavailable; source downtime has no Product_ID
+2026-03,Printing,39,10,29,74.8,23.5,51.3,Planned maintenance,23.5,unavailable; source downtime has no Product_ID
+2026-03,Sewing,24,10,14,38.6,19.4,19.2,Planned maintenance,19.4,unavailable; source downtime has no Product_ID
+2026-04,Cutting,16,2,14,28.1,2.3,25.8,Operator shortage,7.1,unavailable; source downtime has no Product_ID
+2026-04,Finishing,6,1,5,13.9,8.4,5.5,Planned maintenance,8.4,unavailable; source downtime has no Product_ID
+2026-04,Packing,5,1,4,15.4,0.3,15.1,Mechanical fault,9.9,unavailable; source downtime has no Product_ID
+2026-04,Printing,27,3,24,49.7,2.3,47.4,Setup / changeover,14.3,unavailable; source downtime has no Product_ID
+2026-04,Sewing,19,3,16,37.8,4.4,33.4,Setup / changeover,12.4,unavailable; source downtime has no Product_ID
+2026-05,Cutting,15,5,10,25.1,11.4,13.7,Planned maintenance,11.4,unavailable; source downtime has no Product_ID
+2026-05,Finishing,10,1,9,18.4,3.2,15.2,Material wait,11.7,unavailable; source downtime has no Product_ID
+2026-05,Packing,10,5,5,11.6,9.2,2.4,Planned maintenance,9.2,unavailable; source downtime has no Product_ID
+2026-05,Printing,23,7,16,40.3,7.9,32.4,Material wait,12.4,unavailable; source downtime has no Product_ID
+2026-05,Sewing,21,3,18,23.2,3.6,19.6,Material wait,6.1,unavailable; source downtime has no Product_ID
+2026-06,Cutting,10,2,8,25.0,5.1,19.9,Setup / changeover,9.4,unavailable; source downtime has no Product_ID
+2026-06,Finishing,9,2,7,19.2,1.8,17.4,Setup / changeover,8.5,unavailable; source downtime has no Product_ID
+2026-06,Packing,4,1,3,5.1,1.1,4.0,Operator shortage,2.2,unavailable; source downtime has no Product_ID
+2026-06,Printing,38,3,35,69.4,6.7,62.7,Mechanical fault,26.7,unavailable; source downtime has no Product_ID
+2026-06,Sewing,15,4,11,28.8,7.0,21.8,Setup / changeover,10.3,unavailable; source downtime has no Product_ID
+2026-07,Cutting,10,1,9,13.6,2.3,11.3,Operator shortage,4.3,unavailable; source downtime has no Product_ID
+2026-07,Finishing,3,1,2,17.2,1.1,16.1,Setup / changeover,16.1,unavailable; source downtime has no Product_ID
+2026-07,Packing,5,2,3,7.2,4.7,2.5,Planned maintenance,4.7,unavailable; source downtime has no Product_ID
+2026-07,Printing,26,8,18,62.4,27.3,35.1,Planned maintenance,27.3,unavailable; source downtime has no Product_ID
+2026-07,Sewing,21,2,19,45.4,3.9,41.5,Setup / changeover,22.1,unavailable; source downtime has no Product_ID
+2026-08,Cutting,14,3,11,35.9,5.1,30.8,Setup / changeover,13.3,unavailable; source downtime has no Product_ID
+2026-08,Finishing,10,5,5,29.1,8.3,20.8,Mechanical fault,19.3,unavailable; source downtime has no Product_ID
+2026-08,Packing,5,0,5,14.0,0.0,14.0,Material wait,9.0,unavailable; source downtime has no Product_ID
+2026-08,Printing,28,7,21,50.8,11.6,39.2,Setup / changeover,19.8,unavailable; source downtime has no Product_ID
+2026-08,Sewing,13,4,9,30.5,7.9,22.6,Setup / changeover,10.7,unavailable; source downtime has no Product_ID
+2026-09,Cutting,11,2,9,32.6,5.7,26.9,Mechanical fault,15.2,unavailable; source downtime has no Product_ID
+2026-09,Finishing,1,1,0,1.0,1.0,0.0,Planned maintenance,1.0,unavailable; source downtime has no Product_ID
+2026-09,Packing,3,0,3,2.8,0.0,2.8,Setup / changeover,1.8,unavailable; source downtime has no Product_ID
+2026-09,Printing,27,8,19,58.1,12.9,45.2,Setup / changeover,22.8,unavailable; source downtime has no Product_ID
+2026-09,Sewing,19,1,18,51.6,2.7,48.9,Operator shortage,13.1,unavailable; source downtime has no Product_ID

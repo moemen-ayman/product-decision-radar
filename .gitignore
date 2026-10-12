@@ -1,0 +1,17 @@
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+tmp/
+.codex-presentation-build/
+outputs/**/*.inspect.ndjson
+*.log
+
+# Local editor / operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
